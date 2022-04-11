@@ -87,6 +87,11 @@ img.doc{
     left: 50px;
     width: 200px;
     height: 200px;
+    transition: height 2s, width 2s;
+}
+
+img.doc:hover{
+    height: 150px; width: 150px;
 }
 
 img.port{
@@ -95,6 +100,11 @@ img.port{
     left: 100px;
     width: 200px;
     height: 200px;
+    transition: height 2s, width 2s;
+}
+
+img.port:hover{
+    height: 150px; width: 150px;
 }
 
 img.ev{
@@ -103,6 +113,11 @@ img.ev{
     left: 50px;
     width: 200px;
     height: 200px;
+    transition: height 2s, width 2s;
+}
+
+img.ev:hover{
+    height: 150px; width: 150px;
 }
 
 img.tra{
@@ -111,6 +126,11 @@ img.tra{
     left: 100px;
     width: 200px;
     height: 200px;
+    transition: height 2s, width 2s;
+}
+
+img.tra:hover{
+    height: 150px; width: 150px;
 }
 
 nav.redes{
