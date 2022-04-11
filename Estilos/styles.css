@@ -1,0 +1,30 @@
+.grid{
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(5, 2fr);
+
+    grid-template-areas: 
+    
+    "titulo titulo titulo titulo"
+    "nav nav nav nav"
+    "nosotros nosotros nosotros nosotros"
+    "galeria galeria contacto contacto"
+    "footer footer footer footer"
+    ;
+}
+
+.titulo{
+    grid-area: titulo;
+}
+
+.nav{
+    grid-area: nav;
+}
+
+.galeria{
+    grid-area: galeria;
+}
+
+.contacto{
+    grid-area: contacto;
+}
