@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="Estilos/estilos.css">
     <link rel="shortcut icon" href="multimedia/DSC06534-2.ico" type="image/x-icon">
     <title>Julian Mendez Villarroel PH</title>
@@ -13,12 +14,17 @@
     <header> 
         <h1 class="title">Julian Mendez Villarroel PH</h1>
         <nav class="nav">
-            <ul class="menu">
-                <li><a href="Proyecto/GALERIA.html">GALERIA</a></li>
-                <li><a href="Proyecto/INFO.html">INFO</a></li>
-                <li><a href="Proyecto/SERVICIOS.html">SERVICIOS</a></li>
-                <li><a href="Proyecto/CONTACTO.html">CONTACTO</a></li>
-            </ul>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                INICIO
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="Proyecto/GALERIA.html">GALERIA</a></li>
+                    <li><a class="dropdown-item" href="Proyecto/INFO.html">INFO</a></li>
+                    <li><a class="dropdown-item" href="Proyecto/SERVICIOS.html">SERVICIOS</a></li>
+                    <li><a class="dropdown-item" href="Proyecto/CONTACTO.html">CONTACTO</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
@@ -43,6 +49,8 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 
 </body>
 </html>
