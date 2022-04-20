@@ -1,0 +1,25 @@
+{
+  "name": "coder-full-stack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/main.scss Estilos/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": { 
+    "type": "git",
+    "url": "git+https://github.com/SeamDuff/PH_Julian_Mendez.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SeamDuff/PH_Julian_Mendez/issues"
+  },
+  "homepage": "https://github.com/SeamDuff/PH_Julian_Mendez#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  }
+}

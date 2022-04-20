@@ -1,0 +1,150 @@
+body .Galeria {
+  background-color: rgba(24, 129, 24, 0.555);
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+body .Info {
+  background-color: #5f0c0c;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+body .Servicios {
+  background-color: rgba(24, 129, 24, 0.555);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: grid;
+  grid-template-rows: 150px 350px 500px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "titulo nav nav nav" "exc exc exc exc" "footer footer footer footer"; }
+
+body .Contacto {
+  background-color: #5f0c0c;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+a {
+  text-decoration: none; }
+
+h3 {
+  color: antiquewhite; }
+
+.Inicio {
+  display: grid;
+  grid-template-rows: 150px 200px 500px;
+  grid-template-columns: 390px 200px 200px 330px;
+  grid-template-areas: "titulo nav nav nav" "pic pic pic pic" "footer footer footer footer";
+  background-color: brown;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative; }
+
+.title {
+  display: inline-block;
+  background-image: url(../Multimedia/Inicio2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-style: italic;
+  color: aqua;
+  grid-area: titulo; }
+
+.menu {
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+  background-color: beige;
+  width: 400px;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+  left: 500px;
+  grid-area: nav; }
+
+div.pic {
+  position: relative;
+  left: 290px;
+  grid-area: pic; }
+
+img.doc {
+  position: static;
+  top: 50px;
+  left: 50px;
+  width: 200px;
+  height: 200px;
+  transition: height 2s, width 2s; }
+
+img.doc:hover {
+  height: 150px;
+  width: 150px; }
+
+img.port {
+  position: static;
+  top: 50px;
+  left: 100px;
+  width: 200px;
+  height: 200px;
+  transition: height 2s, width 2s; }
+
+img.port:hover {
+  height: 150px;
+  width: 150px; }
+
+img.ev {
+  position: static;
+  top: 100px;
+  left: 50px;
+  width: 200px;
+  height: 200px;
+  transition: height 2s, width 2s; }
+
+img.ev:hover {
+  height: 150px;
+  width: 150px; }
+
+img.tra {
+  position: static;
+  top: 100px;
+  left: 100px;
+  width: 200px;
+  height: 200px;
+  transition: height 2s, width 2s; }
+
+img.tra:hover {
+  height: 150px;
+  width: 150px; }
+
+nav.redes {
+  gap: 25px;
+  background-color: black;
+  width: 200px; }
+
+iframe.YT {
+  width: 450px;
+  height: 300px; }
+
+.Exclusivos {
+  display: block;
+  position: relative;
+  grid-area: exc; }
+
+.About {
+  display: inline-block;
+  position: relative;
+  background-color: antiquewhite;
+  font-style: oblique; }
+
+footer {
+  grid-area: footer; }
+
+@media only screen and (max-width: 480px) {
+  body.Inicio {
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "titulo nav" "pic pic" "footer footer"; }
+  div.pic {
+    grid-area: pic; }
+  body.Servicios {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 600px 350px;
+    grid-template-areas: "titulo nav" "exc exc" "footer footer"; }
+  .menu {
+    left: 0; } }
