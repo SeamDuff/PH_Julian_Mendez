@@ -48,17 +48,18 @@ h3{
 }
 
 div.pic{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     position: relative;
     left: 290px;
     grid-area: pic;
 }
 
 img.doc{
-    position: static;
-    top: 50px;
-    left: 50px;
-    width: 200px;
-    height: 200px;
+    position: map-get($div: position);
+    width: map-get($div: width);
+    height: map-get($div: height);
     transition: height 2s, width 2s;
 }
 
@@ -67,12 +68,7 @@ img.doc:hover{
 }
 
 img.port{
-    position: static;
-    top: 50px;
-    left: 100px;
-    width: 200px;
-    height: 200px;
-    transition: height 2s, width 2s;
+    @extend img.doc
 }
 
 img.port:hover{
@@ -80,12 +76,7 @@ img.port:hover{
 }
 
 img.ev{
-    position: static;
-    top: 100px;
-    left: 50px;
-    width: 200px;
-    height: 200px;
-    transition: height 2s, width 2s;
+    @extend img.doc
 }
 
 img.ev:hover{
@@ -93,12 +84,7 @@ img.ev:hover{
 }
 
 img.tra{
-    position: static;
-    top: 100px;
-    left: 100px;
-    width: 200px;
-    height: 200px;
-    transition: height 2s, width 2s;
+    @extend img.doc
 }
 
 img.tra:hover{
@@ -135,7 +121,8 @@ footer{
     }
 
     div.pic{
-        grid-area: pic;
+        justify-content: left;
+        left: 30px
     }
 
     body.Servicios{

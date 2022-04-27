@@ -5,6 +5,10 @@ nav.redes{
 }
 
 iframe.YT{
-    width: 450px;
-    height: 300px;
+    @include youtube(450px,300px )
+}
+
+@mixin youtube ($width, $height) {
+    width: $width;
+    height: $height;
 }
